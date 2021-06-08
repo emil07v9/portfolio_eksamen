@@ -1,4 +1,6 @@
-img {
+/*Img og video størrelse*/
+img,
+video {
   display: block;
   width: 100%;
   height: auto;
