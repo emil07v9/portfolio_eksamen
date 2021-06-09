@@ -7,19 +7,34 @@ video {
   object-fit: cover;
 }
 
-/*Burgermenu*/
+/*Header/Burgermenu*/
+nav {
+  text-align: end;
+  background-color: aliceblue;
+}
+
 .hidden {
   opacity: 0;
-  transform: translateX(-100%);
+  transform: translateY(-100px);
 }
 
 #menuknap {
   display: inline-block;
+  cursor: pointer;
 }
+
 #menu {
   list-style-type: none;
   transition: transform 0.3s;
-  transform-origin: top left;
+}
+
+#menu li a {
+  font-family: baskerville-urw, serif;
+  text-decoration: none;
+  font-weight: 900;
+  color: black;
+  font-size: 1rem;
+  padding: 10px;
 }
 
 @media (min-width: 600px) {
@@ -27,8 +42,8 @@ video {
     display: none;
   }
 
-  #menuknap.hidden {
-    transform: translateX(0);
+  #menu.hidden {
+    transform: translateY(0);
     opacity: 1;
   }
 
