@@ -37,16 +37,56 @@ header nav {
   padding: 10px;
 }
 
-/* HTML grid */
-main section {
-  margin-bottom: 40px;
+.t2 #second_section .section_box {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
 }
 
-hr {
-  margin-bottom: 40px;
+.t2 #second_section img {
+  width: 280px;
 }
+
+.t3 #second_section .section_wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.t3 #second_section .section_box {
+  width: 320px;
+  text-align: center;
+}
+
+.t3 #second_section img {
+  width: 280px;
+}
+
+/**********************************Main grid (ALLE SIDER)*****************************************/
+main {
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 1000px) 1fr;
+}
+main section {
+  grid-column: 2/3;
+  margin-bottom: 2vw;
+  margin-bottom: 10px;
+}
+
+/**********************************Styling tekst/hr (ALLE SIDER)*****************************************/
+/* hr {
+  margin-bottom: 20px;
+  margin-top: 20px;
+} */
+
+/* p {
+  max-width: 60ch;
+} */
 
 @media (min-width: 600px) {
+  /* Menu responsive */
   #menuknap {
     display: none;
   }
@@ -60,12 +100,59 @@ hr {
     display: inline-block;
   }
 
-  .om_mig {
+  /* Portfolio grid section */
+  .portfolio #second_section .section_wrapper {
     display: grid;
-    grid-template-columns: 1fr minmax(0, 1000px) 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
   }
-  .om_mig section {
-    grid-column: 2/3;
-    margin-bottom: 2vw;
+
+  .portfolio #third_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .portfolio #fourth_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .portfolio #fifth_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  /* Om mig grid section */
+  .om_mig #first_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .t2 #third_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .t2 #fourth_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .t3 #third_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .t3 #fourth_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
   }
 }
