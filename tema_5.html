@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/fwz7slh.css" />
   </head>
   <body>
     <header>
@@ -16,8 +17,8 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section>
+    <main class="t5">
+      <section id="first_section">
         <h1>Tema 5 - Grundlæggende Indhold</h1>
         <p>
           Under tema 5 lavede vi 2 større opgaver. Første opgave var ’05.01.01
@@ -30,78 +31,62 @@
           dette tema blev vi introduceret til Adobe programmet Premiere Pro og
           arbejdede videre på vores færdigheder i Photoshop.
         </p>
+      </section>
+      <section id="second_section">
         <h2>Opgaver i dette tema</h2>
-        <nav>
-          <ul>
-            <li><a href="">05.01.01 Pilotprojekt</a></li>
-            <li><a href="">05.02.01 Redesign og temadokumentation</a></li>
-          </ul>
-        </nav>
+        <div class="section_wrapper">
+          <div class="section_box">
+            <img src="img/tema5_ikon.svg" alt="Ikon" />
+            <h3>05.01.01 Pilotprojekt</h3>
+            <a href="">Læs mere her</a>
+          </div>
+          <div class="section_box">
+            <img src="img/tema5_ikon.svg" alt="Ikon" />
+            <h3>05.02.01 Redesign og temadokumentation</h3>
+            <a href="">Læs mere her</a>
+          </div>
+        </div>
       </section>
-      <section>
+      <section id="third_section">
         <h2>Pilotprojekt</h2>
-        <video controls src=""></video>
-        <article>
-          <h3>Opgavebeskrivelse</h3>
-          <p>
-            I pilotprojektet skulle vi i grupper interviewe og filme en person,
-            der berettede om en passion. Disse klip skulle vi klippe til en 1
-            minuts video, som yderligere skulle bestå af b-rolls fra settet, et
-            establishing shot med titel og have min. 5 klip med 3 forskellige
-            framings. Som dokumentation skulle vi også tage billeder på settet
-            under og efter interviewet.
-          </p>
-          <p>
-            Til sidst opsatte vi et website, hvorpå vi indsatte video og
-            dokumentation for produktionen.
-          </p>
-          <nav>
-            <ul>
-              <li>
-                <a
-                  href="http://emilieschultz.dk/kea/05_indhold/05_01_01_pilotprojekt/index.html#first_section"
-                  >Link til website</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </article>
+        <h3>Opgavebeskrivelse</h3>
+        <div class="section_wrapper">
+          <article>
+            <p>
+              I pilotprojektet skulle vi i grupper interviewe og filme en
+              person, der berettede om en passion. Disse klip skulle vi klippe
+              til en 1 minuts video, som yderligere skulle bestå af b-rolls fra
+              settet, et establishing shot med titel og have min. 5 klip med 3
+              forskellige framings. Som dokumentation skulle vi også tage
+              billeder på settet under og efter interviewet.
+            </p>
+            <p>
+              Til sidst opsatte vi et website, hvorpå vi indsatte video og
+              dokumentation for produktionen.
+            </p>
+          </article>
+          <video controls src=""></video>
+          <a
+            href="http://emilieschultz.dk/kea/05_indhold/05_01_01_pilotprojekt/index.html#first_section"
+            >Link til website</a
+          >
+        </div>
       </section>
-      <section>
+      <section id="third_section">
         <h2>Redesign og temadokumentation</h2>
-        <figure>
+        <h3>Opgavebeskrivelse</h3>
+        <div class="section_wrapper">
           <img src="img/5_splash.png" alt="Forside for websitet" />
-        </figure>
-        <article>
-          <h3>Opgavebeskrivelse</h3>
-          <p>
-            I dette projekt skulle vi i grupper prøve kræfter af med at
-            redesigne en selvvalgt virksomheds website. Den færdige opgave
-            skulle være et kodet website og indeholde indholdsproduktion i form
-            af tekst, foto og video.
-          </p>
-          <nav>
-            <ul>
-              <li>
-                <a href="https://davinco-redesign.netlify.app/"
-                  >Link til website</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </article>
-        <h4>Interview video</h4>
-        <video
-          controls
-          poster="img/5_poster1.png"
-          src="video/5_interview_davinco.mp4"
-        ></video>
-        <h4>Indholdsvideo</h4>
-        <video
-          controls
-          poster="img/5_poster2.jpg"
-          src="video/5_davinco_wine.mp4"
-        ></video>
+          <article>
+            <p>
+              I dette projekt skulle vi i grupper prøve kræfter af med at
+              redesigne en selvvalgt virksomheds website. Den færdige opgave
+              skulle være et kodet website og indeholde indholdsproduktion i
+              form af tekst, foto og video.
+            </p>
+          </article>
+        </div>
+        <a href="https://davinco-redesign.netlify.app/">Link til website</a>
       </section>
       <section>
         <article>

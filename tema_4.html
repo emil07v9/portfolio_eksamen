@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/fwz7slh.css">
   </head>
   <body>
     <header>
@@ -16,8 +17,8 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section>
+    <main class="t4">
+      <section id="first_section">
         <h1>Tema 4 - Grundlæggende Animation</h1>
         <p>
           I tema 4 blev vi introduceret til aktivitetsdiagrammer, statemachine
@@ -31,63 +32,58 @@
           spil-dokumentationswebsite med tilhørende link til eget fungerende
           spil.
         </p>
+      </section>
+      <section id="second_section">
         <h2>Opgaver i dette tema</h2>
-        <nav>
-          <ul>
-            <li>
-              <a href="">Spil og dokumentationswebsite</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="section_wrapper">
+          <div class="section_box">
+            <img src="img/tema5_ikon.svg" alt="Ikon" />
+            <h3>Spil og dokumentationswebsite</h3>
+            <a href="">Spil og dokumentationswebsite</a>
+          </div>
+        </div>
       </section>
-      <section>
+      <section id="third_section">
         <h2>Spil og dokumentationswebsite</h2>
-        <figure>
+        <h3>Opgavebeskrivelse</h3>
+        <div class="section_wrapper">
+          <article>
+            <p>
+              I denne opgave skulle vi udtænke, designe og programmere vores
+              eget spil. Efterfølgende skulle vi opsætte et website, som
+              præsenterede vores spil samt tilhørende assetliste og
+              dokumentation.
+            </p>
+            <p>
+              I idé og design udviklingsfasen producerede vi paper/lofi
+              prototypes og skitser samt aktivitetsdiagrammer for spillet.
+              Derefter rentegnede vi figurer og skærme i Adobe Illustrator og
+              definerede farver for spillet.
+            </p>
+            <p>
+              Efter designprocessen gik vi i gang med kodningen af spillet ved
+              brug af HTML, CSS og Javascript. Her lærte vi om CSS positionering
+              og Transform samt CSS animationer, og hvordan man implementerer
+              dem gennem javascript. I javascript arbejdede vi blandt andet også
+              med animationend, animationiteration reflow, konkatenering som
+              random position mm. Under kodningen udarbejdede vi også et state
+              machine diagram over spillet.
+            </p>
+            <p>
+              Til sidst i projektet arbejdede vi kort med lyd og optageteknik i
+              form af lydeffekter til spillet, som vi selv skulle optage og
+              redigere i Adobe Audition. Efter implementering af lyde kunne vi
+              opsætte websitet for spillet, hvorpå vi samlede al dokumentation
+              fra projektet.
+            </p>
+          </article>
           <img src="img/4_forside.png" alt="Landingpage for website" />
-        </figure>
-        <article>
-          <h3>Opgavebeskrivelse</h3>
-          <p>
-            I denne opgave skulle vi udtænke, designe og programmere vores eget
-            spil. Efterfølgende skulle vi opsætte et website, som præsenterede
-            vores spil samt tilhørende assetliste og dokumentation.
-          </p>
-          <p>
-            I idé og design udviklingsfasen producerede vi paper/lofi prototypes
-            og skitser samt aktivitetsdiagrammer for spillet. Derefter
-            rentegnede vi figurer og skærme i Adobe Illustrator og definerede
-            farver for spillet.
-          </p>
-          <p>
-            Efter designprocessen gik vi i gang med kodningen af spillet ved
-            brug af HTML, CSS og Javascript. Her lærte vi om CSS positionering
-            og Transform samt CSS animationer, og hvordan man implementerer dem
-            gennem javascript. I javascript arbejdede vi blandt andet også med
-            animationend, animationiteration reflow, konkatenering som random
-            position mm. Under kodningen udarbejdede vi også et state machine
-            diagram over spillet.
-          </p>
-
-          <p>
-            Til sidst i projektet arbejdede vi kort med lyd og optageteknik i
-            form af lydeffekter til spillet, som vi selv skulle optage og
-            redigere i Adobe Audition. Efter implementering af lyde kunne vi
-            opsætte websitet for spillet, hvorpå vi samlede al dokumentation fra
-            projektet.
-          </p>
-          <nav>
-            <ul>
-              <li>
-                <a
-                  href="http://emilieschultz.dk/kea/04_animation/spil/index.html"
-                  >Link til website</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </article>
+        </div>
+        <a href="http://emilieschultz.dk/kea/04_animation/spil/index.html"
+          >Link til website</a
+        >
       </section>
-      <section>
+      <section id="fourth_section">
         <article>
           <h3>Dokumentation</h3>
           <p>
@@ -95,51 +91,51 @@
             spillet vist gennem billeder af relevant materiale.
           </p>
         </article>
-        <h4>Aktivitetsdiagram</h4>
-        <figure>
-          <img src="img/4_aktivitetsdiagram.png" alt="Aktivitetsdiagram" />
-        </figure>
-        <h4>State Machine diagram</h4>
-        <figure>
-          <img
-            src="img/4_state_machine_diagram.png"
-            alt="State Machine diagram"
-          />
-        </figure>
-        <h4>Skitser</h4>
-        <figure>
-          <img src="img/4_spilside.jpg" alt="Low Fidelity Spilskærm" />
-          <figcaption>Low Fidelity Spilskærm</figcaption>
-        </figure>
-        <figure>
-          <img src="img/4_startside.jpg" alt="Low Fidelity Startskærm" />
-          <figcaption>Low Fidelity Startskærm</figcaption>
-        </figure>
-        <figure>
-          <img src="img/4_karakterer_skitser.jpg" alt="Karakter skitser" />
-          <figcaption>Low Fidelity karakter skitser</figcaption>
-        </figure>
-        <h4>Skærme</h4>
-        <figure>
-          <img src="img/4_startskaerm.png" alt="Startskærm" />
-          <figcaption>Startskærm</figcaption>
-        </figure>
-        <figure>
-          <img src="img/4_spilskaerm.png" alt="Spilskærm" />
-          <figcaption>Spilskærm</figcaption>
-        </figure>
-        <figure>
-          <img src="img/4_gameoverskaerm.png" alt="Game Over skærm" />
-          <figcaption>Game Over skærm</figcaption>
-        </figure>
-        <figure>
-          <img src="img/4_levelcompleteskaerm.png" alt="Level Complete skærm" />
-          <figcaption>Level Complete skærm</figcaption>
-        </figure>
-        <figure>
-          <img src="img/4_regelskaerm.png" alt="Regelskærm" />
-          <figcaption>Regelskærm</figcaption>
-        </figure>
+        <div class="section_wrapper">
+          <div class="col_1">
+            <h4>Aktivitetsdiagram</h4>
+            <img src="img/4_aktivitetsdiagram.png" alt="Aktivitetsdiagram" />
+          </div>
+          <div class="col_2">
+            <h4>State Machine diagram</h4>
+            <img
+              src="img/4_state_machine_diagram.png"
+              alt="State Machine diagram"
+            />
+          </div>
+          <div class="col_3">
+            <h4>Skitse - spilskærm</h4>
+            <img src="img/4_spilside.jpg" alt="Low Fidelity Spilskærm" />
+          </div>
+          <div class="col_4">
+            <h4>Skitse - startskærm</h4>
+            <img src="img/4_startside.jpg" alt="Low Fidelity Startskærm" />
+          </div>
+          <div class="col_5">
+            <h4>Startskærm</h4>
+            <img src="img/4_startskaerm.png" alt="Startskærm" />
+          </div>
+          <div class="col_6">
+            <h4>Spilskærm</h4>
+            <img src="img/4_spilskaerm.png" alt="Spilskærm" />
+          </div>
+          <div class="col_7">
+            <h4>Game Over skærm</h4>
+            <img src="img/4_gameoverskaerm.png" alt="Game Over skærm" />
+          </div>
+          <div class="col_8">
+            <h4>Level Complete skærm</h4>
+            <img
+              src="img/4_levelcompleteskaerm.png"
+              alt="Level Complete skærm"
+            />
+          </div>
+          <div class="col_9">
+            <h4>Regelskærm</h4>
+          <figure>
+            <img src="img/4_regelskaerm.png" alt="Regelskærm" />
+          </div>
+        </div>
       </section>
     </main>
     <footer>

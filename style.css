@@ -10,17 +10,18 @@ video {
 /*Header/Burgermenu*/
 header nav {
   text-align: end;
-  background-color: aliceblue;
+  background-color: #eae7e4;
 }
 
 .hidden {
   opacity: 0;
-  transform: translateY(-100px);
+  transform: translateY(-200px);
 }
 
 #menuknap {
   display: inline-block;
   cursor: pointer;
+  font-size: 2rem;
 }
 
 #menu {
@@ -29,14 +30,26 @@ header nav {
 }
 
 #menu li a {
-  font-family: baskerville-urw, serif;
-  text-decoration: none;
-  font-weight: 900;
+  font-family: canada-type-gibson, sans-serif;
+  font-weight: 600;
+  font-style: normal;
   color: black;
   font-size: 1rem;
   padding: 10px;
 }
 
+/*Splashbillede og titel*/
+.index #first_section {
+  grid-column: 1/4;
+
+  width: 100%;
+  height: 90vh;
+  background-image: url(img/index.svg);
+  background-size: cover;
+  background-position: 47% 0%;
+}
+
+/**********************************Grid first/second section TEMA 2-5*****************************************/
 .t2 #second_section .section_box {
   display: flex;
   flex-wrap: nowrap;
@@ -64,6 +77,29 @@ header nav {
   width: 280px;
 }
 
+.t4 #second_section .section_box {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.t4 #second_section img {
+  width: 280px;
+}
+
+.t5 #second_section .section_wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.t5 #second_section .section_box {
+  width: 320px;
+  text-align: center;
+}
+
 /**********************************Main grid (ALLE SIDER)*****************************************/
 main {
   display: grid;
@@ -76,11 +112,70 @@ main section {
 }
 
 /**********************************Styling tekst/hr (ALLE SIDER)*****************************************/
-/* hr {
-  margin-bottom: 20px;
-  margin-top: 20px;
-} */
+hr {
+  color: #d8cdc0;
+}
 
+h1 {
+  font-family: canada-type-gibson, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h2 {
+  font-family: canada-type-gibson, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+h3 {
+  font-family: oswald, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-family: oswald, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+/**********************************Styling knapper (ALLE SIDER)*****************************************/
+button a {
+  font-family: oswald, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  text-decoration: none;
+  color: #af7171;
+}
+
+button a:hover {
+  color: #c79f93;
+}
+
+button {
+  border: 2px solid #af7171;
+  background-color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button::after {
+  content: "";
+  width: 0%;
+  height: 0.1rem;
+  background: #c79f93;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+button:hover::after {
+  width: 100%;
+}
 /* p {
   max-width: 60ch;
 } */
@@ -151,6 +246,30 @@ main section {
   }
 
   .t3 #fourth_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .t4 #third_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .t4 #fourth_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .t5 #third_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .t5 #fourth_section .section_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
