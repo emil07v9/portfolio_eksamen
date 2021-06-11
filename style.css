@@ -8,9 +8,15 @@ video {
 }
 
 /*Header/Burgermenu*/
+header {
+  background-color: #eae7e4;
+  display: flex;
+  justify-content: space-between;
+}
+
 header nav {
   text-align: end;
-  background-color: #eae7e4;
+  padding-right: 10px;
 }
 
 .hidden {
@@ -27,6 +33,7 @@ header nav {
 #menu {
   list-style-type: none;
   transition: transform 0.3s;
+  padding: 15px;
 }
 
 #menu li a {
@@ -39,66 +46,15 @@ header nav {
   padding: 10px;
 }
 
-/*Splashbillede og titel*/
-.index #first_section {
-  grid-column: 1/4;
-
-  width: 100%;
-  height: 90vh;
-  background-image: url(img/index.svg);
-  background-size: cover;
-  background-position: 47% 0%;
+#menu li {
+  padding: 5px;
 }
 
-/**********************************Grid first/second section TEMA 2-5*****************************************/
-.t2 #second_section .section_box {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  align-items: center;
-}
-
-.t2 #second_section img {
-  width: 280px;
-}
-
-.t3 #second_section .section_wrapper {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.t3 #second_section .section_box {
-  width: 320px;
-  text-align: center;
-}
-
-.t3 #second_section img {
-  width: 280px;
-}
-
-.t4 #second_section .section_box {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  align-items: center;
-}
-
-.t4 #second_section img {
-  width: 280px;
-}
-
-.t5 #second_section .section_wrapper {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.t5 #second_section .section_box {
-  width: 320px;
-  text-align: center;
+.logo img {
+  display: inline;
+  width: 40vw;
+  height: 40vw;
+  padding-left: 15px;
 }
 
 /**********************************Main grid (ALLE SIDER)*****************************************/
@@ -108,8 +64,157 @@ main {
 }
 main section {
   grid-column: 2/3;
-  margin-bottom: 2vw;
   margin-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+section {
+  margin-top: 60px;
+}
+
+hr {
+  margin-top: 60px;
+}
+
+footer {
+  margin-top: 60px;
+}
+
+/**********************************Index CSS*****************************************/
+
+/*Splashbillede og titel*/
+.index #first_section {
+  grid-column: 1/4;
+
+  width: 100%;
+  height: 90vh;
+  background-image: url(img/index.svg);
+  background-size: cover;
+  background-position: 47% 0%;
+  margin-top: 20px;
+}
+
+.index #third_section {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Indhold i bokse (pad) og luft om bokse (marg)*/
+.index #third_section article {
+  background-color: #fffade;
+  padding: 20px;
+  margin: 20px;
+}
+
+.index #third_section img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/**********************Portfolio: Grid*****************************/
+.portfolio button {
+  margin-top: 20px;
+}
+
+/**********************TEMA 2-5: Grid second section*****************************/
+.button1 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.t2 #second_section .section_box {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fffade;
+  padding: 20px;
+}
+
+.t2 #second_section img {
+  width: 280px;
+}
+
+.t2 #second_section .section_wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.t2 button {
+  margin-top: 20px;
+}
+
+.t3 #second_section .section_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.t3 #second_section img {
+  width: 280px;
+}
+
+.t3 #second_section .section_box {
+  background-color: #fffade;
+  width: 320px;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.t3 button {
+  margin-top: 20px;
+}
+
+.t4 #second_section .section_box {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fffade;
+  padding: 20px;
+}
+
+.t4 #second_section img {
+  width: 280px;
+}
+
+.t4 #second_section .section_wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.t4 button {
+  margin-top: 20px;
+}
+
+.t5 #second_section .section_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.t5 #second_section img {
+  width: 280px;
+}
+
+.t5 #second_section .section_box {
+  background-color: #fffade;
+  width: 320px;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.t5 button {
+  margin-top: 20px;
 }
 
 /**********************************Styling tekst/hr (ALLE SIDER)*****************************************/
@@ -121,24 +226,38 @@ h1 {
   font-family: canada-type-gibson, sans-serif;
   font-weight: 600;
   font-style: normal;
+  font-size: clamp(3rem, 16vw - 4rem, 6rem);
 }
 
 h2 {
   font-family: canada-type-gibson, sans-serif;
   font-weight: 500;
   font-style: italic;
+  font-size: clamp(1.7rem, 6.4vw - 1.1rem, 2.9rem);
 }
 
 h3 {
   font-family: oswald, sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: clamp(1rem, 6.9vw - 2rem, 2.3rem);
+}
+
+h4 {
+  font-family: oswald, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: clamp(1rem, 4.3vw - 0.9rem, 1.8rem);
+  text-decoration: underline;
 }
 
 p {
   font-family: oswald, sans-serif;
   font-weight: 200;
   font-style: normal;
+  font-size: clamp(1rem, 1.6vw + 0.3rem, 1.3rem);
+  /* em vs px --> spacing er relativ til fontstørrelsen */
+  letter-spacing: 0.1em;
 }
 
 /**********************************Styling knapper (ALLE SIDER)*****************************************/
@@ -156,7 +275,7 @@ button a:hover {
 
 button {
   border: 2px solid #af7171;
-  background-color: white;
+  background-color: transparent;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -177,9 +296,6 @@ button::after {
 button:hover::after {
   width: 100%;
 }
-/* p {
-  max-width: 60ch;
-} */
 
 @media (min-width: 600px) {
   /* Menu responsive */
@@ -194,6 +310,26 @@ button:hover::after {
 
   #menu li {
     display: inline-block;
+  }
+
+  .logo img {
+    display: inline;
+    width: 7vw;
+    height: 7vw;
+  }
+
+  header nav ul li::after {
+    content: "";
+    width: 0%;
+    height: 0.1rem;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+
+  header nav ul li:hover::after {
+    width: 100%;
   }
 
   /* Portfolio grid section */
@@ -240,6 +376,13 @@ button:hover::after {
     gap: 10px;
   }
 
+  .t3 #second_section .section_wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
   .t3 #third_section .section_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -274,5 +417,16 @@ button:hover::after {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+  }
+
+  .index #third_section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+  }
+
+  .index #third_section article {
+    margin: 10px;
   }
 }
