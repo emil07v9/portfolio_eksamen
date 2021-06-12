@@ -116,7 +116,7 @@ footer {
   margin-top: 20px;
 }
 
-/**********************TEMA 2-5: Grid second section*****************************/
+/**********************TEMA 2-5: second section*****************************/
 .button1 {
   display: flex;
   justify-content: center;
@@ -152,10 +152,6 @@ footer {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-}
-
-.t3 #second_section img {
-  width: 280px;
 }
 
 .t3 #second_section .section_box {
@@ -199,10 +195,6 @@ footer {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-}
-
-.t5 #second_section img {
-  width: 280px;
 }
 
 .t5 #second_section .section_box {
