@@ -56,6 +56,41 @@ header nav {
   height: 40vw;
   padding-left: 15px;
 }
+/****************** Brødkrummesti ******************/
+/* Styling af liste */
+ul.breadcrumb {
+  list-style: none;
+}
+
+/* Styling af font - display side om side */
+ul.breadcrumb li {
+  display: inline;
+  font-family: oswald, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: clamp(1rem, 1.6vw + 0.3rem, 1.3rem);
+  /* em vs px --> spacing er relativ til fontstørrelsen */
+  letter-spacing: 0.1em;
+  color: #af7171;
+}
+
+/* Tilføjer (/) før/efter hvert liste element  */
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: #af7171;
+  content: "/\00a0";
+}
+
+/* Farve på listeelementer */
+ul.breadcrumb li a {
+  color: #af7171;
+  text-decoration: none;
+}
+
+/* Farve på hover  */
+ul.breadcrumb li a:hover {
+  color: #c79f93;
+}
 
 /**********************************Main grid (ALLE SIDER)*****************************************/
 main {
@@ -64,7 +99,6 @@ main {
 }
 main section {
   grid-column: 2/3;
-  margin-bottom: 10px;
   margin-bottom: 10px;
 }
 
@@ -289,6 +323,25 @@ button:hover::after {
   width: 100%;
 }
 
+/**********************************Footer (ALLE SIDER)*****************************************/
+
+footer {
+  display: grid;
+  justify-content: center;
+}
+
+footer .section_wrapper {
+  text-align: center;
+}
+
+.socialemedier {
+  display: flex;
+}
+
+footer img {
+  width: 3rem;
+}
+
 @media (min-width: 600px) {
   /* Menu responsive */
   #menuknap {
@@ -421,4 +474,14 @@ button:hover::after {
   .index #third_section article {
     margin: 10px;
   }
+
+  /* #section_footer .socialemedier {
+    display: flex;
+    justify-content: center;
+  }
+
+  #section_footer .section_wrapper {
+    display: flex;
+    justify-content: space-between;
+  } */
 }
