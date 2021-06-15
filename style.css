@@ -267,7 +267,7 @@ ul.breadcrumb li a:hover {
 
 /* Indhold i bokse (pad) og luft om bokse (marg)*/
 .index #third_section article {
-  border: 0.4rem solid #f0e2e3;
+  border: 0.4rem solid #e6cacc;
   margin: 3rem;
 }
 
@@ -292,7 +292,7 @@ ul.breadcrumb li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 0.4rem solid #f0e2e3;
+  border: 0.4rem solid #e6cacc;
   padding: 2rem;
 }
 
@@ -319,7 +319,7 @@ ul.breadcrumb li a:hover {
 }
 
 .t3 #second_section .section_box {
-  border: 0.4rem solid #f0e2e3;
+  border: 0.4rem solid #e6cacc;
   text-align: center;
   padding: 2rem;
 }
@@ -346,7 +346,7 @@ ul.breadcrumb li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 0.4rem solid #f0e2e3;
+  border: 0.4rem solid #e6cacc;
   padding: 2rem;
 }
 
@@ -373,7 +373,7 @@ ul.breadcrumb li a:hover {
 
 /* Boks størrelse */
 .t5 #second_section .section_box {
-  border: 0.4rem solid #f0e2e3;
+  border: 0.4rem solid #e6cacc;
   width: 19rem;
   text-align: center;
   padding: 2rem;
