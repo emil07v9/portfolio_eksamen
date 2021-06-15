@@ -19,7 +19,7 @@ main section {
 }
 
 div {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .portfolio,
@@ -37,14 +37,15 @@ hr {
 
 /********Styling tekst/hr (ALLE SIDER)***********/
 hr {
-  color: #d8cdc0;
+  color: #af7171;
 }
 
 h1 {
   font-family: canada-type-gibson, sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: clamp(3rem, 16vw - 4rem, 6rem);
+  font-size: clamp(2.5rem, 10.7vw - 2.2rem, 4.5rem);
+  color: #878db0;
 }
 
 h2 {
@@ -52,6 +53,7 @@ h2 {
   font-weight: 500;
   font-style: italic;
   font-size: clamp(1.7rem, 6.4vw - 1.1rem, 2.9rem);
+  color: #878db0;
 }
 
 h3 {
@@ -59,6 +61,7 @@ h3 {
   font-weight: 400;
   font-style: normal;
   font-size: clamp(1rem, 6.9vw - 2rem, 2.3rem);
+  color: #878db0;
 }
 
 h4 {
@@ -67,6 +70,7 @@ h4 {
   font-style: normal;
   font-size: clamp(1rem, 4.3vw - 0.9rem, 1.8rem);
   text-decoration: underline;
+  color: #878db0;
 }
 
 p {
@@ -155,7 +159,7 @@ header nav {
   font-family: canada-type-gibson, sans-serif;
   font-weight: 600;
   font-style: normal;
-  color: black;
+  color: #000;
   text-decoration: none;
   font-size: 1rem;
 }
@@ -175,7 +179,7 @@ header nav {
 }
 
 /****************Footer******************/
-/* Centrering af ikoner */
+/* Centrering af ikoner på side */
 footer {
   display: grid;
   justify-content: center;
@@ -186,9 +190,10 @@ footer .section_wrapper {
   text-align: center;
 }
 
-/* Ikoner vandret */
+/* Ikoner vandret og center */
 .socialemedier {
   display: flex;
+  justify-content: center;
 }
 
 /* Str img */
@@ -254,14 +259,12 @@ ul.breadcrumb li a:hover {
 /* Placering af nav-bokse */
 .index #third_section {
   text-align: center;
-  margin-top: 3rem;
 }
 
 /* Indhold i bokse (pad) og luft om bokse (marg)*/
 .index #third_section article {
-  background-color: #fffade;
-  padding: 1rem;
-  margin: 1rem;
+  background-color: #e6cacc;
+  margin: 3rem;
 }
 
 /**********************Portfolio*****************************/
@@ -281,7 +284,7 @@ ul.breadcrumb li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fffade;
+  background-color: #e6cacc;
   padding: 2rem;
 }
 
@@ -308,7 +311,7 @@ ul.breadcrumb li a:hover {
 }
 
 .t3 #second_section .section_box {
-  background-color: #fffade;
+  background-color: #e6cacc;
   text-align: center;
   padding: 2rem;
 }
@@ -321,13 +324,17 @@ ul.breadcrumb li a:hover {
   margin: 1rem;
 }
 
+.t3 #third_section1 .section_wrapper {
+  margin: 0;
+}
+
 /***************************TEMA 4***************************/
 /* Boks position */
 .t4 #second_section .section_box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fffade;
+  background-color: #e6cacc;
   padding: 2rem;
 }
 
@@ -354,7 +361,7 @@ ul.breadcrumb li a:hover {
 
 /* Boks størrelse */
 .t5 #second_section .section_box {
-  background-color: #fffade;
+  background-color: #e6cacc;
   width: 19rem;
   text-align: center;
   padding: 2rem;
@@ -381,7 +388,7 @@ ul.breadcrumb li a:hover {
 
   #menu li {
     display: inline-block;
-    padding: 1rem;
+    padding: 2rem;
   }
 
   .logo img {
@@ -393,7 +400,7 @@ ul.breadcrumb li a:hover {
     content: "";
     width: 0%;
     height: 0.1rem;
-    background: black;
+    background: #000;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -409,6 +416,12 @@ ul.breadcrumb li a:hover {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     gap: 0.5rem;
+  }
+
+  /* Luft om bokse (marg)*/
+  .index #third_section article {
+    background-color: #e6cacc;
+    margin: 1rem;
   }
 
   /************* Portfolio grid section ************/
